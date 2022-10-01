@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aura-dev-105524-authRole",
+      "UnauthRoleArn": "arn:aws:iam::365336699859:role/amplify-aura-dev-105524-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::365336699859:role/amplify-aura-dev-105524-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-aura-dev-105524-deployment",
+      "UnauthRoleName": "amplify-aura-dev-105524-unauthRole",
+      "StackName": "amplify-aura-dev-105524",
+      "StackId": "arn:aws:cloudformation:us-east-1:365336699859:stack/amplify-aura-dev-105524/15245de0-4199-11ed-a86e-0ea9c730e65d",
+      "AmplifyAppId": "drirb5se2uoaa"
+    },
+    "categories": {
+      "auth": {
+        "aura1e57a34e": {}
+      }
+    }
+  }
+}
