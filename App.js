@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Amplify from 'aws-amplify';
 import config from "./src/aws-exports";
 import { withAuthenticator } from 'aws-amplify-react-native';
+import Home from './Home';
 
 Amplify.configure({
   ...config,
@@ -15,7 +16,7 @@ Amplify.configure({
 function App () {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! sonya sucks lollll</Text>
+      <Home />
       <StatusBar style="auto" />
     </View>
   );
