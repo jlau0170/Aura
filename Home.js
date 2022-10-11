@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Pressable, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Pressable, Dimensions, TouchableOpacity } from 'react-native';
 import { Auth } from 'aws-amplify';
 const { width } = Dimensions.get('window');
 const Home = () => {
@@ -12,13 +12,21 @@ const Home = () => {
   };
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Welcome!</Text>
-        <Pressable style={styles.button} onPress={() => signOut()}>
-          <Text style={styles.buttonText}>Sign out</Text>
-        </Pressable>
+      <Text style={styles.header}>How are you {"\n"}feeling today?{"\n"}</Text>
+      <View style={styles.circleRow}>
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#99DAFF'}} />
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#FCCBB5'}} />
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#F9C0D3'}} />
+      </View>
+      <View style={styles.circleRow}>
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#F5FCAF'}} />
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#DBCEFC'}} />
+        <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#CAF39B'}} />
       </View>
     </View>
+
+
+
   );
 };
 const styles = StyleSheet.create({
@@ -29,16 +37,15 @@ const styles = StyleSheet.create({
     width: width,
     paddingVertical: 20,
   },
-  header: {
+  circleRow: {
     display: 'flex',
     flexDirection: 'row',
+    padding: 10,
     justifyContent: 'space-between',
-    padding: 20,
-    width: width,
     alignItems: 'center',
   },
-  headerText: {
-    fontSize: 28,
+  header: {
+    fontSize: 32,
     fontWeight: 'bold',
   },
   button: {
