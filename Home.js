@@ -18,6 +18,12 @@ const Home = () => {
           <Text style={styles.buttonText}>Sign out</Text>
         </Pressable>
       </View>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Welcome!</Text>
+        <Pressable style={styles.button} onPress={() => signOut()}>
+          <Text style={styles.buttonText}>Sign out</Text>
+        </Pressable>
+      </View>
     </View>
   );
 };
@@ -35,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 20,
     width: width,
-    alignItems: 'center',
+    alignItems: 'right',
   },
   headerText: {
     fontSize: 28,
