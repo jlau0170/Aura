@@ -5,6 +5,7 @@ import Amplify from 'aws-amplify';
 import config from "./src/aws-exports";
 import { withAuthenticator } from 'aws-amplify-react-native';
 import Home from './Home';
+import Welcome from './Welcome';
 
 Amplify.configure({
   ...config,
@@ -16,7 +17,7 @@ Amplify.configure({
 function App () {
   return (
     <View style={styles.container}>
-      <Home />
+      <Welcome />
       <StatusBar style="auto" />
     </View>
   );
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  
 }); 
 
 export default withAuthenticator(App);

@@ -23,6 +23,12 @@ const Home = () => {
         <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#DBCEFC'}} />
         <TouchableOpacity style={{width: 60, height: 60, borderRadius: 30, backgroundColor: '#CAF39B'}} />
       </View>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Welcome!</Text>
+        <Pressable style={styles.button} onPress={() => signOut()}>
+          <Text style={styles.buttonText}>Sign out</Text>
+        </Pressable>
+      </View>
     </View>
 
 
